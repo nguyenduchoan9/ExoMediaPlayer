@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorTextWhite">#FFFFFF</color>
+    <color name="colorTextBlack">#0c0d11</color>
+
+    <color name="colorBGYouTube">#ba3951</color>
+    <color name="colorBGTwitter">#488997</color>
+    <color name="colorBGPorn">#0d0c0c</color>
+    <color name="colorBGPhucLong">#007241</color>
+    <color name="colorBGCheeseFactory">#0c4169</color>
+</resources>
