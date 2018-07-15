@@ -6,4 +6,18 @@
     <dimen name="text_size_media_player_option">32sp</dimen>
 
     <dimen name="height_media_player_option">160dp</dimen>
+
+    <dimen name="btnTextPadding">8dp</dimen>
+    <dimen name="btnCorner">4dp</dimen>
+    <dimen name="btnStroke">2dp</dimen>
+
+    <dimen name="textSmallSize">8sp</dimen>
+    <dimen name="textMediumSize">16sp</dimen>
+    <dimen name="textLargeSize">24sp</dimen>
+
+    <dimen name="spaceSmall">8dp</dimen>
+    <dimen name="spaceXSmall">12dp</dimen>
+    <dimen name="spaceMedium">16dp</dimen>
+    <dimen name="spaceXMedium">20dp</dimen>
+    <dimen name="spaceLarge">24dp</dimen>
 </resources>

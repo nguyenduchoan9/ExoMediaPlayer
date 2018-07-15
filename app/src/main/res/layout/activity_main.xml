@@ -1,15 +1,33 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#000000">
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="#000000"
+    android:keepScreenOn="true">
 
-    <com.google.android.exoplayer2.ui.PlayerView
-        android:id="@+id/playerView"
+    <FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        app:show_timeout="10000"
-        app:fastforward_increment="30000"
-        app:rewind_increment="30000"
-        app:controller_layout_id="@layout/custom_playback_control"
-        android:layout_height="wrap_content"/>
-</FrameLayout>
+        android:layout_height="match_parent">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fastforward_increment="5000"
+            app:repeat_toggle_modes="none|all"
+            app:rewind_increment="5000"
+            app:show_timeout="5000" />
+    </FrameLayout>
+
+    <solution.codebox.recorderapp.view.MyClickableTextView
+        android:id="@+id/tvOpenYourVideo"
+        style="@style/ButtonOverlayMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/spaceLarge"
+        android:paddingRight="@dimen/spaceLarge"
+        android:text="@string/OpenYourVideo" />
+
+</RelativeLayout>

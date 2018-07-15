@@ -1,8 +1,40 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Exo Player</string>
     <string name="media_url_mp3">http://storage.googleapis.com/exoplayer-test-media-0/play.mp3</string>
     <string name="media_url_mp4">http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4</string>
     <string name="media_url_mp4_2">https://bitmovin-a.akamaihd.net/content/MI201109210084_1/MI201109210084_mpeg-4_hd_high_1080p25_10mbits.mp4</string>
     <string name="media_url_dash"><![CDATA[http://www.youtube.com/api/manifest/dash/id/bf5bb2419360daf1/source/youtube?as=fmp4_audio_clear,fmp4_sd_hd_clear&sparams=ip,ipbits,expire,source,id,as&ip=0.0.0.0&ipbits=0&expire=19000000000&signature=51AF5F39AB0CEC3E5497CD9C900EBFEAECCCB5C7.8506521BFC350652163895D4C26DEE124209AA9E&key=ik0]]></string>
+    <string name="media_url_dash_2"><![CDATA[https://storage.googleapis.com/wvmedia/clear/h264/tears/tears.mpd]]></string>
     <!--<string name="media_url_dash"><![CDATA[https://bitmovin-a.akamaihd.net/content/MI201109210084_1/mpds/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.mpd]]></string>-->
+
+    <string name="application_name">ExoPlayer</string>
+    <string name="unexpected_intent_action">Unexpected intent action: <xliff:g id="action">%1$s</xliff:g></string>
+    <string name="error_generic">Playback failed</string>
+    <string name="error_unrecognized_abr_algorithm">Unrecognized ABR algorithm</string>
+    <string name="error_drm_not_supported">Protected content not supported on API levels below 18</string>
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+    <string name="error_no_decoder">This device does not provide a decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+    <string name="error_instantiating_decoder">Unable to instantiate decoder <xliff:g id="decoder_name">%1$s</xliff:g></string>
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+    <string name="sample_list_load_error">One or more sample lists failed to load</string>
+    <string name="ima_not_loaded">Playing sample without ads, as the IMA extension was not loaded</string>
+    <string name="download_start_error">Failed to start download</string>
+    <string name="download_playlist_unsupported">This demo app does not support downloading playlists</string>
+    <string name="download_drm_unsupported">This demo app does not support downloading protected content</string>
+    <string name="download_scheme_unsupported">This demo app only supports downloading http streams</string>
+    <string name="download_ads_unsupported">IMA does not support offline ads</string>
+    
+    <string name="OpenYourVideo">Open your video</string>
+    <string name="DialogOptionOpenVideoOnDevice">Open video on your device</string>
+    <string name="DialogOptionOpenByUrl">Open video by url</string>
+    <string name="DialogOptionClose">Close</string>
+
+    <string name="information_msg_this_feature_is_coming_soon">This feature is coming soon</string>
+
+    <string name="error_msg_your_video_format_is_invalid">Your video format is invalid</string>
 </resources>

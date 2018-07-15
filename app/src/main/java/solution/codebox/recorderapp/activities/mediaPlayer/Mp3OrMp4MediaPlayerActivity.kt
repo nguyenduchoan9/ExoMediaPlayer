@@ -8,8 +8,9 @@ import solution.codebox.recorderapp.validator.MediaFileValidator
 import solution.codebox.recorderapp.view.mediaPlayer.MediaPlayerFactory
 import solution.codebox.recorderapp.view.mediaPlayer.MyMediaPlayer
 
-class DashMediaPlayerActivity : BaseMediaPlayerActivity() {
-    override fun getDialogOptions(): List<DialogOption> = listOf(openVideoByUrlDialogOption())
+class Mp3OrMp4MediaPlayerActivity : BaseMediaPlayerActivity() {
+    override fun getDialogOptions(): List<DialogOption> = listOf(openVideoOnYourDeviceDialogOption(),
+            openVideoByUrlDialogOption())
 
     override fun getVideoUriAndPlay(filePath: String) {
         if (MediaFileValidator.isMP3File(this, filePath)
@@ -24,10 +25,10 @@ class DashMediaPlayerActivity : BaseMediaPlayerActivity() {
     }
 
     override fun mediaUris(): List<Uri> {
-        return listOf(Uri.parse(getString(R.string.media_url_dash)))
+        return listOf(Uri.parse(getString(R.string.media_url_mp4)))
     }
 
     override fun buildMediaPlayer(): MyMediaPlayer {
-        return MediaPlayerFactory.buildDashPlayer(this)
+        return MediaPlayerFactory.buildMP3OrMP4Player(this)
     }
 }

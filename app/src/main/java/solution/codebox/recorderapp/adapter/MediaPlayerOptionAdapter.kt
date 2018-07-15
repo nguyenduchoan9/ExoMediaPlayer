@@ -7,9 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.item_media_player_option.view.*
 import solution.codebox.recorderapp.R
-import solution.codebox.recorderapp.data.MediaPlayerOption
+import solution.codebox.recorderapp.model.MediaPlayerOption
 
 class MediaPlayerOptionAdapter(var options: List<MediaPlayerOption>, var listener: MediaPlayerOptionListener) : RecyclerView.Adapter<MediaPlayerOptionAdapter.MediaPlayerOptionVH>() {
+    lateinit var lastSelectedItem : MediaPlayerOption
 
     interface MediaPlayerOptionListener {
         fun onItemClick(type: String)
@@ -39,6 +40,7 @@ class MediaPlayerOptionAdapter(var options: List<MediaPlayerOption>, var listene
             tvMediaPlayerOption?.text = option.option
             tvMediaPlayerOption?.setBackgroundColor(getColor(option.backgroundColor))
             itemView.setOnClickListener {
+                lastSelectedItem = option
                 listener.onItemClick(option.option)
             }
         }

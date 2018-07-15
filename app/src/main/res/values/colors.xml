@@ -4,6 +4,9 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="whiteBg">#FFFFFF</color>
+
+
     <color name="colorTextWhite">#FFFFFF</color>
     <color name="colorTextBlack">#0c0d11</color>
 
@@ -12,4 +15,15 @@
     <color name="colorBGPorn">#0d0c0c</color>
     <color name="colorBGPhucLong">#007241</color>
     <color name="colorBGCheeseFactory">#0c4169</color>
+
+    <color name="mediaPlayerButton">#9c0000</color>
+    <color name="mediaPlayerControllerBackground">#CC000000</color>
+    <color name="mediaPlayerSeekBarPlayed">#9c0000</color>
+    <color name="mediaPlayerSeekBarBuffered">#FFC107</color>
+    <color name="mediaPlayerSeekBarUnplay">#757575</color>
+
+    <color name="btnOverlayMediaEnable">#CC000000</color>
+    <color name="btnOverlayMediaPressed">#009688</color>
+
+    <color name="dialogBackgroundColor">#40FFFFFF</color>
 </resources>

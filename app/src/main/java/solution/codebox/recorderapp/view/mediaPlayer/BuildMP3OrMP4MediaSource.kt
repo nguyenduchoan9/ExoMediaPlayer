@@ -1,4 +1,4 @@
-package solution.codebox.recorderapp.view
+package solution.codebox.recorderapp.view.mediaPlayer
 
 import android.content.Context
 import android.net.Uri
@@ -10,8 +10,8 @@ import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory
 import com.google.android.exoplayer2.upstream.TransferListener
 import com.google.android.exoplayer2.util.Util
 
-class BuildMP3MediaSource(context: Context,
-                                   bandwidthMeter: TransferListener<in DataSource>)
+class BuildMP3OrMP4MediaSource(context: Context,
+                               bandwidthMeter: TransferListener<in DataSource>)
     : BuildMediaSource(context, bandwidthMeter) {
 
     override fun buildMediaSource(uris: List<Uri>): MediaSource {

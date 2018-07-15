@@ -20,7 +20,7 @@
             android:name=".activities.mediaPlayer.Mp4MediaPlayerActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".activities.mediaPlayer.Mp3MediaPlayerActivity"
+            android:name=".activities.mediaPlayer.Mp3OrMp4MediaPlayerActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".activities.mediaPlayer.DashMediaPlayerActivity"

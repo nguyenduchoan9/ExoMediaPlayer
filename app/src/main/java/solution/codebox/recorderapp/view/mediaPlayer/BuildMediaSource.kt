@@ -1,4 +1,4 @@
-package solution.codebox.recorderapp.view
+package solution.codebox.recorderapp.view.mediaPlayer
 
 import android.content.Context
 import android.net.Uri

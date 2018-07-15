@@ -21,4 +21,21 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="ButtonOverlayMedia">
+        <item name="android:background">@drawable/selector_text_view_bg_open_your_video</item>
+        <item name="android:textColor">@drawable/selector_text_view_text</item>
+        <item name="android:textSize">@dimen/textMediumSize</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DialogButtonOption">
+        <item name="android:background">@drawable/selector_dialog_text_view_bg</item>
+        <item name="android:textColor">@drawable/selector_dialog_text_view_text</item>
+        <item name="android:textSize">@dimen/textMediumSize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_margin">@dimen/spaceSmall</item>
+    </style>
+
 </resources>

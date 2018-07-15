@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners
+        android:bottomLeftRadius="@dimen/btnCorner"
+        android:bottomRightRadius="@dimen/btnCorner" />
+    <solid android:color="@color/btnOverlayMediaEnable" />
+    <padding
+        android:bottom="@dimen/btnTextPadding"
+        android:left="@dimen/btnTextPadding"
+        android:right="@dimen/btnTextPadding"
+        android:top="@dimen/btnTextPadding" />
+</shape>

@@ -1,19 +1,13 @@
-package solution.codebox.recorderapp.view
+package solution.codebox.recorderapp.view.mediaPlayer
 
 import android.content.Context
 import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter
 
 class MediaPlayerFactory {
     companion object {
-        fun buildMP3Player(context: Context) : MyMediaPlayer {
+        fun buildMP3OrMP4Player(context: Context) : MyMediaPlayer {
             var bandwidthMeter = DefaultBandwidthMeter()
-            var buildMediaSource = BuildMP3MediaSource(context, bandwidthMeter)
-            return MyMediaPlayer(context, buildMediaSource, bandwidthMeter)
-        }
-
-        fun buildMP4Player(context: Context) : MyMediaPlayer {
-            var bandwidthMeter = DefaultBandwidthMeter()
-            var buildMediaSource = BuildMP3MediaSource(context, bandwidthMeter)
+            var buildMediaSource = BuildMP3OrMP4MediaSource(context, bandwidthMeter)
             return MyMediaPlayer(context, buildMediaSource, bandwidthMeter)
         }
 
